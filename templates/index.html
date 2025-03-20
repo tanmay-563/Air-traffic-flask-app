@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Traffic Control - Closest Pair Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>✈️ Air Traffic Control - Closest Pair Detection ✈️</h1>
+
+        <!-- 🎮 Button Controls -->
+        <div class="button-container">
+            <button id="generateBtn">Generate Aircraft</button>
+            <button id="findBtn">Find Closest Pair</button>
+        </div>
+
+        <!-- 🖥️ Canvas to Draw Aircraft -->
+        <canvas id="aircraftCanvas" width="500" height="500"></canvas>
+
+        <!-- ℹ️ Info Box for Closest Pair Info -->
+        <div id="infoBox" class="info-box">
+            <p>Closest Aircraft: <span id="closestPair">None</span></p>
+            <p>Distance: <span id="minDistance">0</span></p>
+        </div>
+
+        <!-- 🧠 AI Prediction Result Box -->
+        <div id="aiResultBox" class="info-box">
+            <p><strong>AI Prediction:</strong> Waiting for results...</p>
+        </div>
+    </div>
+
+    <!-- 🚀 Include JavaScript File -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

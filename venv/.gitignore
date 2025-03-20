@@ -1,0 +1,30 @@
+# Ignore virtual environment
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+*.env
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.bak
+*.swp
+*.swo
+.DS_Store
+
+# Ignore compiled Python files
+*.egg-info/
+*.dist-info/
+
+# Ignore any uploads or generated files
+/static/uploads/
